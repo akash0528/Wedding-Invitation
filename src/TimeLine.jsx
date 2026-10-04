@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import Image1 from "./assets/img1.jpeg";
 import Image2 from "./assets/img2.jpeg";
 import Image3 from "./assets/img3.jpeg";
+import WeddingSong from "./assets/WeddSong.mpeg";
 
 const timelineEvents = [
   {
@@ -45,8 +46,7 @@ export default function Timeline() {
   const audioRef = useRef(null);
 
   // Background Song Link (Apna MP3 File URL yahan replace kar sakte ho)
-  const songUrl =
-    "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3";
+  const songUrl = WeddingSong;
 
   const toggleMusic = () => {
     if (!audioRef.current) return;
