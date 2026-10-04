@@ -1,0 +1,64 @@
+.falling-flowers {
+  position: fixed;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  pointer-events: none; /* User clicks through this container */
+
+  overflow: hidden;
+
+  /* Lowered z-index slightly for better compatibility */
+  z-index: 10;
+}
+
+.falling-flower {
+  position: absolute;
+
+  top: -10vh; /* Start slightly higher for smoother entry */
+
+  /* No fixed opacity here, the animation handles it */
+
+  animation-name: flowerFall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  will-change: transform;
+}
+
+/* Specific styling for the leaf image and other img tags inside .falling-flower */
+.falling-flower img {
+  width: 100%; /* Spans full container width */
+  height: auto; /* Maintains aspect ratio */
+  object-fit: contain; /* Prevents stretching */
+}
+
+@keyframes flowerFall {
+  0% {
+    transform:
+      translateY(-10vh) /* Same as start position */
+      translateX(0)
+      rotate(0deg);
+    opacity: 0;
+  }
+
+  5% {
+    opacity: 0.9;
+  }
+
+  50% {
+    transform:
+      translateY(55vh) /* Descend more gradually */
+      translateX(40px)
+      rotate(180deg);
+  }
+
+  100% {
+    transform:
+      translateY(115vh) /* End just below the screen */
+      translateX(-50px)
+      rotate(360deg);
+    opacity: 0;
+  }
+}

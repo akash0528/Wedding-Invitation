@@ -1,0 +1,20 @@
+.main-wedding-page {
+  animation: weddingPageReveal 2.5s ease forwards;
+}
+
+@keyframes weddingPageReveal {
+  0% {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  40% {
+    opacity: 0.2;
+    transform: translateY(18px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none; /* translateY(0) ki jagah */
+  }
+}
