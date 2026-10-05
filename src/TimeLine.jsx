@@ -12,7 +12,7 @@ const timelineEvents = [
     time: "8:00 PM",
     description:
       "Sufi Night An evening filled with mehndi, music, laughter and beautiful memories with family.",
-    image: Image1,
+    image: Image2,
     side: "right",
   },
 
@@ -23,7 +23,7 @@ const timelineEvents = [
     time: "04:00 PM",
     description:
       "A beautiful Haldi ceremony surrounded by family, love and happiness.",
-    image: Image2,
+    image: Image1,
     side: "left",
   },
 
