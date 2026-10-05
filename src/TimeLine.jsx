@@ -3,28 +3,41 @@ import Image1 from "./assets/HaldiImg.png";
 import Image2 from "./assets/MehndiImg.png";
 import Image3 from "./assets/WeddingImg.png";
 import WeddingSong from "./assets/WeddSong.mpeg";
+import WedImg from "./assets/img1.jpeg";
 
 const timelineEvents = [
   {
     id: 1,
-    title: "Mehndi",
+    title: "Sagan Ceremony",
+    date: "19 November 2026",
+    time: "8:00 PM",
+    location: "RajWada Palace - The RiyaSat | Shalimar Bagh, Delhi-110052",
+    description:
+      "A heartfelt Sagan ceremony to seek the blessings of our elders and begin this beautiful journey together.",
+    image: WedImg,
+    side: "right",
+  },
+  {
+    id: 2,
+    title: "Mehndi ",
     date: "21 November 2026",
     time: "8:00 PM",
+    location: "Andaz - The Aurelia Banquet, CBD Ground, Delhi",
     description:
       "Sufi Night An evening filled with mehndi, music, laughter and beautiful memories with family.",
     image: Image2,
-    side: "right",
+    side: "left",
   },
-
   {
-    id: 2,
+    id: 3,
     title: "Haldi",
-    date: "22 November 2026",
-    time: "04:00 PM",
+    date: "21 November 2026",
+    time: "8:00 PM",
+    location: "Andaz - The Aurelia Banquet, CBD Ground, Delhi",
     description:
       "A beautiful Haldi ceremony surrounded by family, love and happiness.",
     image: Image1,
-    side: "left",
+    side: "right",
   },
 
   {
@@ -32,10 +45,11 @@ const timelineEvents = [
     title: "Wedding",
     date: "23 November 2027",
     time: "8:00 PM",
+    location: "Vione Convention Centre, Gate No.7, Pandav Nagar, Delhi-92",
     description:
       "The most beautiful chapter begins as we celebrate love and togetherness.",
     image: Image3,
-    side: "right",
+    side: "left",
   },
 ];
 
@@ -222,6 +236,8 @@ export default function Timeline() {
                   <span>📅 {item.date}</span>
                   <span>🕐 {item.time}</span>
                 </div>
+
+                <div style={styles.location}>📍 {item.location}</div>
 
                 <p style={styles.cardDescription}>{item.description}</p>
                 <div style={styles.imageBox}>
@@ -410,6 +426,27 @@ const styles = {
     objectFit: "cover",
     objectPosition: "center",
     display: "block",
+  },
+  location: {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    gap: "6px",
+    marginBottom: "14px",
+    fontSize: "16px",
+    color: "#6b1d2f",
+    fontWeight: "600",
+    fontFamily: "'Dancing Script', cursive",
+    textDecoration: "none",
+    textAlign: "center",
+  },
+  cardDescription: {
+    fontSize: "16px",
+    lineHeight: "1.5",
+    color: "#665955",
+    margin: "0 0 20px 0",
+    fontFamily: "'Dancing Script', cursive",
+    fontWeight: "500",
   },
   /* Compact Music Control Button Style */
   compactMusicButton: {

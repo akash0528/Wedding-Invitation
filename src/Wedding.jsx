@@ -19,7 +19,6 @@ const Wedding = () => {
         src={Ganesh}
         alt="Shree Ganesh"
         className="ganesh-image"
-        
       />
 
       {/* Invitation Content */}
