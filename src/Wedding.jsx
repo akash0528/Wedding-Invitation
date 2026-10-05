@@ -11,7 +11,7 @@ const Wedding = () => {
         src={WeddingPicture}
         alt="Wedding Invitation"
         className="wedding-image"
-        loading="lazy"
+        
       />
 
       {/* Ganesh Ji */}
@@ -19,7 +19,7 @@ const Wedding = () => {
         src={Ganesh}
         alt="Shree Ganesh"
         className="ganesh-image"
-        loading="lazy"
+        
       />
 
       {/* Invitation Content */}
