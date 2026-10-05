@@ -11,10 +11,16 @@ const Wedding = () => {
         src={WeddingPicture}
         alt="Wedding Invitation"
         className="wedding-image"
+        loading="lazy"
       />
 
       {/* Ganesh Ji */}
-      <img src={Ganesh} alt="Shree Ganesh" className="ganesh-image" />
+      <img
+        src={Ganesh}
+        alt="Shree Ganesh"
+        className="ganesh-image"
+        loading="lazy"
+      />
 
       {/* Invitation Content */}
       <div className="wedding-content">
@@ -27,20 +33,6 @@ const Wedding = () => {
         </p>
         {/* Jai */}
         <div className="person person-one">
-          <h1 className="couple-name">Jai</h1>
-
-          <p className="parent-label">S/O</p>
-
-          <p className="parents">
-            Mrs. Prem Batra
-            <br />
-            &amp; Mr. Rakesh Batra
-          </p>
-        </div>
-        {/* With */}
-        <div className="and-text">with</div>
-        {/* Priya */}
-        <div className="person person-two">
           <h1 className="couple-name">Riya</h1>
 
           <p className="parent-label">D/O</p>
@@ -49,6 +41,20 @@ const Wedding = () => {
             Mrs. Manju Madaan
             <br />
             &amp; Mr. Rajesh Madaan
+          </p>
+        </div>
+        {/* With */}
+        <div className="and-text">with</div>
+        {/* Priya */}
+        <div className="person person-two">
+          <h1 className="couple-name">Jai</h1>
+
+          <p className="parent-label">S/O</p>
+
+          <p className="parents">
+            Mrs. Prem Batra
+            <br />
+            &amp; Mr. Rakesh Batra
           </p>
         </div>
         {/* Invitation Message */}{" "}

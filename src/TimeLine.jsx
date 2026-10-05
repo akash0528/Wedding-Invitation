@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
-import Image1 from "./assets/img1.jpeg";
-import Image2 from "./assets/img2.jpeg";
-import Image3 from "./assets/img3.jpeg";
+import Image1 from "./assets/HaldiImg.png";
+import Image2 from "./assets/MehndiImg.png";
+import Image3 from "./assets/WeddingImg.png";
 import WeddingSong from "./assets/WeddSong.mpeg";
 
 const timelineEvents = [
@@ -399,7 +399,7 @@ const styles = {
   },
   imageBox: {
     width: "100%",
-    height: "240px",
+    height: "520px",
     borderRadius: "14px",
     overflow: "hidden",
     position: "relative",
@@ -408,6 +408,7 @@ const styles = {
     width: "100%",
     height: "100%",
     objectFit: "cover",
+    objectPosition: "center",
     display: "block",
   },
   /* Compact Music Control Button Style */

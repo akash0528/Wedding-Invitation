@@ -327,7 +327,7 @@ export default function Scratch() {
                   }}
                 >
                   <p style={styles.saveTheDate}>✦ SAVE THE DATE ✦</p>
-                  <h1 style={styles.coupleNames}>Jai & Riya</h1>
+                  <h1 style={styles.coupleNames}>Riya & Jai</h1>
                   <div style={styles.divider}></div>
                   <p style={styles.weddingDate}>23TH NOVEMBER 2026</p>
                   <p style={styles.tagline}>

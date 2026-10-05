@@ -14,7 +14,7 @@ export default function Venue() {
     mapAddress,
   )}`;
 
-  const contacts = [{ name: "Jai ", phone: "+91 70428 00690" }];
+  const contacts = [{ name: "Harsh Madaan", phone: "+91 70428 00690" }];
 
   return (
     <div style={styles.container}>

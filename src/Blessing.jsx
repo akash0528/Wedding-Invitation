@@ -39,7 +39,7 @@ export default function FamilyBlessings() {
 
         {/* Cursive Family Name */}
         <h1 className="family-title" style={styles.mainTitle}>
-          Batra Family
+          Madaan Family
         </h1>
 
         {/* Italic Invitation Note */}

@@ -33,9 +33,9 @@ const FrontInvitation = ({ onOpen }) => {
             <span className="letter-small">SAVE THE DATE</span>
 
             <h2>
-              Jai
-              <span>&</span>
               Riya
+              <span>&</span>
+              Jai
             </h2>
 
             <p>12 January 2027</p>
@@ -70,7 +70,7 @@ const FrontInvitation = ({ onOpen }) => {
           <div className="opening-text">
             <span>WITH LOVE</span>
 
-            <h2>Jai &amp; Riya</h2>
+            <h2>Riya &amp; Jai</h2>
           </div>
         </div>
       )}
