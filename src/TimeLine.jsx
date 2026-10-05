@@ -415,7 +415,7 @@ const styles = {
   },
   imageBox: {
     width: "100%",
-    height: "520px",
+    height: "460px",
     borderRadius: "14px",
     overflow: "hidden",
     position: "relative",
